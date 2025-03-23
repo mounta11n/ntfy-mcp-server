@@ -5,7 +5,9 @@
   "main": "build/index.js",
   "type": "module",
   "scripts": {
-    "build": "tsc && chmod +x build/index.js",
+    "build": "tsc",
+    "build:linux": "tsc && chmod +x build/index.js",
+    "build:windows": "tsc",
     "start": "node build/index.js"
   },
   "dependencies": {
